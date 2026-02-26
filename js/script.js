@@ -32,12 +32,18 @@ arrowLeft.addEventListener('click', () => {
     if(currentIndex > 0){
         currentIndex--;
         slide(currentIndex);
+    }else{
+        currentIndex = 2;
+        slide(currentIndex);
     }
 });
 
 arrowRight.addEventListener('click', () => {
     if(currentIndex < 2){
         currentIndex++;
+        slide(currentIndex);
+    }else{
+        currentIndex = 0;
         slide(currentIndex);
     }
 });

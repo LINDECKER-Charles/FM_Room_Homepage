@@ -31,7 +31,7 @@
     }
 
     .slider-arrow{
-        @apply p-6 transition-all duration-150 ease-in-out rounded-full md:rounded-none;
+        @apply p-6 transition-all duration-150 ease-in-out;
     }
     .slider-arrow:hover{
         @apply md:bg-grey-800;
@@ -39,12 +39,12 @@
     .slider-arrow:active{
         @apply bg-grey-800;
     }
-    #arrow-left:active{
+/*     #arrow-left:active{
         @apply -rotate-12;
     }
     #arrow-right:active{
         @apply rotate-12;
-    }
+    } */
 
     #main-section article{
         @apply flex flex-col px-6 py-10 gap-3 shrink-0 w-screen;
