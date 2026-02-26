@@ -29,5 +29,21 @@
     .nav-link:hover, .nav-link:active {
         @apply text-grey-500;
     }
+
+    .slider-arrow{
+        @apply p-6 transition-all duration-150 ease-in-out rounded-full;
+    }
+    .slider-arrow:hover{
+        @apply md:bg-grey-800;
+    }
+    .slider-arrow:active{
+        @apply bg-grey-800;
+    }
+    #arrow-left:active{
+        @apply -rotate-12;
+    }
+    #arrow-right:active{
+        @apply rotate-12;
+    }
 }
 

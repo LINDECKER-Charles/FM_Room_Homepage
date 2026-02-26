@@ -15,7 +15,7 @@
 </head>
 <body class="font-sans">
   <header class="relative">
-    <figure class="absolute w-full -z-10">
+    <figure class="w-full -z-10">
       <picture>
         <source srcset="./assets/images/mobile-image-hero-1.jpg" 
           media="(max-width: 768px)">
@@ -24,7 +24,7 @@
       </picture>
     </figure>
     <nav id="burger" role="navigation" aria-label="main navigation" 
-    class="px-7 py-9 flex flex-row w-2/3 justify-between items-center">
+    class="px-7 py-9 absolute top-0 flex flex-row w-2/3 justify-between items-center">
       <button role="menu" class="relative w-5 h-5 z-50" aria-label="mobile burger menu">
         <img id="open" class="absolute inset-0 w-full h-full transition-all duration-500 ease-in-out"
         src="./assets/images/icon-hamburger.svg" alt="open button">
@@ -43,11 +43,14 @@
         <li><a class="nav-link" href="#">Contact</a></li>
       </ul>
     </nav>
-    <div id="slider" class="hidden">
-      <button aria-label="swip left section">
+    <div id="slider" class="absolute bottom-0 right-0 bg-black
+    flex flex-row justify-center items-center overflow-hidden">
+      <button aria-label="swip left section" id="arrow-left"
+       class="slider-arrow ">
         <img src="./assets/images/icon-angle-left.svg" alt="Left arrow">
       </button>
-      <button aria-label="swip right section">
+      <button aria-label="swip right section" id="arrow-right"
+      class="slider-arrow">
         <img src="./assets/images/icon-angle-right.svg" alt="Right arrow">
       </button>
     </div>
