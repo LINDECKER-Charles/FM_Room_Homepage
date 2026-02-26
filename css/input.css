@@ -31,7 +31,7 @@
     }
 
     .slider-arrow{
-        @apply p-6 transition-all duration-150 ease-in-out rounded-full;
+        @apply p-6 transition-all duration-150 ease-in-out rounded-full md:rounded-none;
     }
     .slider-arrow:hover{
         @apply md:bg-grey-800;
@@ -44,6 +44,23 @@
     }
     #arrow-right:active{
         @apply rotate-12;
+    }
+
+    #main-section article{
+        @apply flex flex-col px-6 py-10 gap-3;
+    }
+
+    #main-section article h1{
+        @apply text-3xl font-bold;
+    }
+
+    #main-section article p {
+        @apply text-grey-500;
+    }
+
+    #main-section article button{
+        @apply flex flex-row items-center
+        tracking-widest uppercase font-bold gap-4 text-xl;
     }
 }
 
