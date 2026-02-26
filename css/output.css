@@ -374,7 +374,7 @@
   .slider-arrow:active {
     background-color: var(--color-grey-800);
   }
-  #main-section article {
+  article {
     display: flex;
     width: 100vw;
     flex-shrink: 0;
@@ -383,13 +383,13 @@
     padding-inline: calc(var(--spacing) * 6);
     padding-block: calc(var(--spacing) * 10);
   }
-  #main-section article h1 {
+  article h1 {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
-  #main-section article p {
+  article p {
     color: var(--color-grey-500);
   }
   #main-section article button {

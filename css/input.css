@@ -46,15 +46,15 @@
         @apply rotate-12;
     } */
 
-    #main-section article{
+    article{
         @apply flex flex-col px-6 py-10 gap-3 shrink-0 w-screen;
     }
 
-    #main-section article h1{
+    article h1{
         @apply text-3xl font-bold;
     }
 
-    #main-section article p {
+    article p {
         @apply text-grey-500;
     }
 
