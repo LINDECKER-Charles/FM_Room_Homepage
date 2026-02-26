@@ -36,17 +36,17 @@
       </figure>
       <ul id="main-nav" class="fixed inset-0 w-full bg-white
       flex flex-col justify-center items-center gap-6
-      translate-x-full transition-all duration-300 ease-in-out">
+      translate-x-full transition-all duration-300 ease-in-out z-20">
         <li><a class="nav-link" href="#">Home</a></li>
         <li><a class="nav-link" href="#">Shop</a></li>
         <li><a class="nav-link" href="#">About</a></li>
         <li><a class="nav-link" href="#">Contact</a></li>
       </ul>
     </nav>
-    <div id="slider" class="absolute bottom-0 right-0 bg-black
+    <div id="slider" class="absolute z-0 bottom-0 right-0 bg-black
     flex flex-row justify-center items-center overflow-hidden">
       <button aria-label="swip left section" id="arrow-left"
-       class="slider-arrow ">
+       class="slider-arrow">
         <img src="./assets/images/icon-angle-left.svg" alt="Left arrow">
       </button>
       <button aria-label="swip right section" id="arrow-right"
@@ -56,39 +56,41 @@
     </div>
   </header>
   <main class="">
-    <section id="main-section" class="flex flex-row">
-      <article >
-        <h1>Discover innovative ways to decorate</h1>
-        <p>We provide unmatched quality, comfort, and style for property owners across the country. 
-        Our experts combine form and function in bringing your vision to life. Create a room in your 
-        own style with our collection and make your property a reflection of you and what you love.</p>
-        <button>
-          <span>Shop now</span>
-          <img class="w-10 h-4" 
-          src="./assets/images/icon-arrow.svg" alt="arrow image">
-        </button>
-      </article>
-      <article class="hidden">
-        <h1>We are available all across the globe</h1>
-        <p>With stores all over the world, it's easy for you to find furniture for your home or place of business. 
-    Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
-    store locator. Any questions? Don't hesitate to contact us today.</p>
-        <button>
-          <span>Shop now</span>
-          <img src="./assets/images/icon-arrow.svg" alt="arrow image">
-        </button>
-      </article>
-      <article class="hidden">
-        <h1>Manufactured with the best materials</h1>
-        <p>Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
-    to ensure that every product is made as perfect and as consistent as possible. With three decades of 
-    experience in this industry, we understand what customers want for their home and office.</p>
-        <button>
-          <span>Shop now</span>
-          <img src="./assets/images/icon-arrow.svg" alt="arrow image">
-        </button>
-      </article>
-    </section>
+    <div class="overflow-hidden w-screen">
+      <section id="main-section" class="flex flex-row transition-all duration-500 ease-in-out">
+        <article>
+          <h1>Discover innovative ways to decorate</h1>
+          <p>We provide unmatched quality, comfort, and style for property owners across the country. 
+          Our experts combine form and function in bringing your vision to life. Create a room in your 
+          own style with our collection and make your property a reflection of you and what you love.</p>
+          <button>
+            <span>Shop now</span>
+            <img class="w-10 h-4" 
+            src="./assets/images/icon-arrow.svg" alt="arrow image">
+          </button>
+        </article>
+        <article>
+          <h1>We are available all across the globe</h1>
+          <p>With stores all over the world, it's easy for you to find furniture for your home or place of business. 
+      Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
+      store locator. Any questions? Don't hesitate to contact us today.</p>
+          <button>
+            <span>Shop now</span>
+            <img src="./assets/images/icon-arrow.svg" alt="arrow image">
+          </button>
+        </article>
+        <article>
+          <h1>Manufactured with the best materials</h1>
+          <p>Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
+      to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+      experience in this industry, we understand what customers want for their home and office.</p>
+          <button>
+            <span>Shop now</span>
+            <img src="./assets/images/icon-arrow.svg" alt="arrow image">
+          </button>
+        </article>
+      </section>
+    </div>
     <figure>
       <picture>
         <source srcset="./assets/images/mobile-image-hero-2.jpg" 
