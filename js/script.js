@@ -23,13 +23,14 @@ const arrowLeft = document.getElementById('arrow-left');
 const arrowRight = document.getElementById('arrow-right');
 
 function slide(index) {
-  mainSect.style.transform = `translateX(-${index * 100}vw)`
+  const width = mainSect.parentElement.offsetWidth
+  mainSect.style.transform = `translateX(-${index * width}px)`
 }
 
 let currentIndex = 0;
 
 arrowLeft.addEventListener('click', () => {
-    if(currentIndex > 0){
+    if(currentIndex != 0){
         currentIndex--;
         slide(currentIndex);
     }else{
@@ -39,7 +40,7 @@ arrowLeft.addEventListener('click', () => {
 });
 
 arrowRight.addEventListener('click', () => {
-    if(currentIndex < 2){
+    if(currentIndex != 2){
         currentIndex++;
         slide(currentIndex);
     }else{
