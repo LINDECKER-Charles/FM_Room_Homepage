@@ -20,8 +20,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://github.com/LINDECKER-Charles/FM-FAQAccordion)
-- Live Site URL: [Live site URL](https://fm-faq-accordion-beige.vercel.app)
+- Solution URL: [Solution URL](https://github.com/LINDECKER-Charles/FM_Room_Homepage)
+- Live Site URL: [Live site URL](https://lindecker-charles.github.io/FM_Room_Homepage/)
 
 ## My process
 

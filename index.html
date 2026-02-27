@@ -13,8 +13,8 @@
   <link rel="stylesheet" href="./css/output.css">
   <script defer src="./js/script.js"></script>
 </head>
-<body class="font-sans">
-  <header class="relative flex flex-col md:flex-row md:items-stretch">
+<body class="font-sans md:h-screen">
+  <header class="relative flex flex-col md:flex-row md:items-stretch md:h-2/3">
     <div class="relative md:w-7/12">
       <figure class="w-full -z-10 h-full">
         <picture class="h-full">
@@ -96,26 +96,36 @@
       </section>
     </div>
   </header>
-  <main class="">
-    <figure class="w-full">
+  <main class="flex flex-col md:flex-row md:items-stretch md:h-1/3">
+
+    <figure class="w-full md:w-1/3">
       <picture>
-        <img class="w-full" 
-        src="./assets/images/image-about-dark.jpg" alt="salon image">
+        <img 
+          class="w-full h-full object-cover"
+          src="./assets/images/image-about-dark.jpg" 
+          alt="salon image">
       </picture>
     </figure>
-    <article>
-      <h1>About our furniture</h1>
-      <p>Our multifunctional collection blends design and function to suit your individual taste.
-      Make each room unique, or pick a cohesive theme that best express your interests and what
-      inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-      or anything in between. Product specialists are available to help you create your dream space.</p>
+
+    <article class="md:w-1/3 flex flex-col justify-center px-8 py-12">
+      <h1 class="text-xl md:text-2xl uppercase font-bold mb-4 tracking-widest">About our furniture</h1>
+      <p class="text-sm leading-relaxed text-grey-500">
+        Our multifunctional collection blends design and function to suit your individual taste.
+        Make each room unique, or pick a cohesive theme that best express your interests and what
+        inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+        or anything in between. Product specialists are available to help you create your dream space.
+      </p>
     </article>
-    <figure class="w-full">
+
+    <figure class="w-full md:w-1/3">
       <picture>
-        <img class="w-full" 
-        src="./assets/images/image-about-light.jpg" alt="chair image">
+        <img 
+          class="w-full h-full object-cover"
+          src="./assets/images/image-about-light.jpg" 
+          alt="chair image">
       </picture>
     </figure>  
+
   </main>
   <footer>
     <div class="sr-only text-center text-xs">
